@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Kalam:wght@700&display=swap');
+
+.home-title {
+    font-size: 2em;
+    font-family: "Kalam";
+    margin-top: 10px;
+}
+
+#logo_link{
+    padding-top: 5px;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-nav a{
+nav a {
     text-align: center;
-    color: #312F2F;
+    color: #2D848A;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover{
     background-color: #2D898B;
@@ -34,6 +47,10 @@ main section{
 
 body{
     background-color: #C1DFF0;
+    font-family: "Baloo 2", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -41,9 +58,13 @@ header{
 }
 
 .book, .join{
-    background-color: #C1DFF0;
+    background-color: #2D898B;
     color: #312F2F;
     text-decoration: none;
+    padding: 15px 30px;
+    margin: 50px;
+    border-radius: 5px;
+    
 }
 .book:hover, .join:hover{
     background-color: #2D898B;
@@ -55,17 +76,25 @@ header{
 
 .msg{
     background-color: #C1DFF0;
-}
-.msg h2{
+    line-height: 1.5em;
     color: #312F2F;
+    font-family: "Kalam";
+    padding: 35px;
 }
+h2{
+    color: #312F2F;
+    font-family: "Kalam";
+    margin: 0;
+};
 .msg p{
     color: #312F2F;
+    padding: 15px;
 }
 
 footer{
     background-color: #C1DFF0;
-    
+    padding: 25px 50px;
+    margin-top: 200px;    
 }
 footer h3{
     color: #312F2F;
@@ -80,7 +109,30 @@ footer a:hover{
     color: #312F2F;
     text-decoration: underline;
 }
-
+footer .social img{
+    padding-top: 15px;
+}
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
+
+p {
+    font-family: "Baloo 2", Helvetica, sans-serif;
+    color: #312F2F;
+    padding: 1em;
+}
+
+.rivers-card .camping-card .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 5px solid black;
+    margin: 20px
+}
+
+main section img {
+    box-sizing: border-box;
+}
+          
