@@ -1,1 +1,274 @@
-header{background-color: black;}
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #2A1820;
+  --secondary-color: #ea701f;
+  --accent1-color: #b0bfb6;
+  --accent2-color: #f3fcf0;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Kdam Thmor Pro', sans-serif;;
+  --paragraph-font: 'Montserrat', sans-serif;;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #ea701f;  /* headlines on a white background */ 
+  --headline-color-on-color: #b0bfb6; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #2A1820; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #b0bfb6; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #050505;
+  --nav-link-color: #f3fcf0;
+  --nav-background-color: #2A1820;
+  --nav-hover-link-color: #2A1820;
+  --nav-hover-background-color: #b0bfb6;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+body{
+  background-color: #05050a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  background: var(--accent1-color);
+}
+header {
+  
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  min-width: 120px;
+  text-decoration: none;
+  
+
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+#hero {
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    
+}
+#hero-msg h1, #hero-msg h4{
+text-align: center;
+font-size: 3em;
+text-shadow: -2px 2px 0 var(--accent1-color);
+}
+#hero-img{
+    width: 100%;
+    margin-top: 0;
+ 
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    background-color: #05050a;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 150px;
+}
+
+.home-title{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1;
+}
+.logo{
+    width: 200px
+}
+#mission-statement{
+    color: var(--paragraph-color-on-color);
+    margin: 0 auto;
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -2px 2px 0 #050505;
+    margin-top: -50px;
+}
+
+footer{
+    background-color: var(--nav-background-color);
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+footer h3{
+    color: var(--headline-color-on-white);
+    text-decoration: underline;
+}
+footer a{
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    text-decoration: underline;
+}
+footer .social img{
+    padding-top: 15px;
+}
+.icon{
+    width: 80px;
+    padding-top: 10px;
+}
+#page-portals{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    background-color: #b0bfb6;
+}
+.portal1{
+  margin: 20px;
+  display: grid;
+  width: 100%;
+  grid-column: 2/3;
+  grid-template-columns: 1fr 3fr 1fr;
+    
+   
+}
+.portal2{
+  margin: 20px;
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  width: 100%;
+  grid-column: 4/5;
+}
+#crypto-pg{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 500px;
+  border: 10px solid #2A1820;
+  box-shadow: 5px 5px 10px #171717;
+}
+#mining-pg{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 500px;
+  border: 10px solid #2A1820;
+  box-shadow: 5px 5px 10px #171717;
+}
+#crypto-icon{
+  border: 5px solid #05050a;
+  border-radius: 10px;
+  margin-top: 20px;
+  justify-self: center;
+  width:100px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: #b0bfb6;
+}
+#mining-icon{ 
+  border: 5px solid #05050a;
+  border-radius: 10px; 
+  margin-top: 20px;
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width:100px;
+  background-color: #b0bfb6;
+}
+.portal-h {
+  margin-top: 150px;
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width:100px;
+  text-shadow: -2px 2px 0 #050505;
+}
+.click-portal{
+  margin-top: 250px;
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width:100px;
+  text-shadow: -1px 1px 0 #050505;
+}
+
+.page-title{
+  text-align: center;
+  border: 5px solid #050505;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  background-color: #171717;
+}
+.info {
+  margin-right:50px;
+  margin-left: 50px;
+  background-color: #b0bfb6;
+    
+}
+.text-side{
+  margin: 20px;
+  width: 240px;
+  border: 10px solid #2A1820;
+  box-shadow: 5px 5px 10px #171717;
+  background-color: #b0bfb6;
+  float: left;
+}
+.link{
+  display: block;
+  color: #f3fcf0;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+.to-do-list{
+  display: block;
+  color: #f3fcf0;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#mining-img{
+  width: 75%;
+  margin-left: 12.5%;
+  border: 10px solid #2A1820;
+  box-shadow: 5px 5px 10px #171717;
+}
