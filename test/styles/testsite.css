@@ -1,6 +1,9 @@
 * {box-sizing:border-box}
 .title{
     color: #f2f2f2;
+    margin: 0 auto;
+    display: block;
+    width:400px
 }
 /* Slideshow container */
 .slideshow-container {
