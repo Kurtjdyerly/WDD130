@@ -4,19 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NFT's</title>
+    <link rel="stylesheet" href="styles/testsite.css">
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        </script>
 </head>
 <body>
-    <h1>Education</h1>
-    <p>Education is the difference between wishing you could help others & being able to help them
-        ---President Nelson</p>
-    <li>Faith in the Lord Jesus Christ</li>
-    <li>Repentance</li>
-    <li>Baptism by immersion for the remission of sins</li>
-    <li>Layingon of hands for the gift of the Holy Ghost</li>
-    <img class="President Nelson" src="images/russell_nelson_official_portrait_2018.jpeg" alt="Portrait of President Nelson">
-    <p id="Quote">"Because of the Savior's Atonement, His gospel provides an invitation to keep changing, growing, and becoming more pure."</p>
-    <p class="title">Russell M. Nelson</p>
-    <p class="title">President of the Church of Jesus Christ of Latter-day Saints</p>
+<h1 class="title">Non-Fungible Token Projects</h1>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="images\Assassin.png" style="width:100%">
+      <div class="text">Sahtoshi legionaries</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="images\black_rose.jpg" style="width:100%">
+      <div class="text">Galaxy Eggs</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="images\galaxy_egg_guardian.jpg" style="width:100%">
+      <div class="text">Galaxy Warriors</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / </div>
+        <img src="images\galaxy_warrior_plague.jpg" style="width:100%">
+        <div class="text">Galaxy Warriors</div>
+      </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images\divinity_cells.jpg" style="width:100%">
+        <div class="text">Divinity Cells</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 </body>
 </html>
